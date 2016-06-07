@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C74ECD491D0635AF00D411D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74ECD481D0635AF00D411D1 /* AppDelegate.swift */; };
+		C74ECD4B1D0635AF00D411D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74ECD4A1D0635AF00D411D1 /* ViewController.swift */; };
+		C74ECD4E1D0635AF00D411D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74ECD4C1D0635AF00D411D1 /* Main.storyboard */; };
+		C74ECD501D0635AF00D411D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74ECD4F1D0635AF00D411D1 /* Assets.xcassets */; };
+		C74ECD531D0635AF00D411D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74ECD511D0635AF00D411D1 /* LaunchScreen.storyboard */; };
+		C74ECD5E1D0635AF00D411D1 /* TextFieldAutoCompleteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74ECD5D1D0635AF00D411D1 /* TextFieldAutoCompleteTests.swift */; };
+		C74ECD691D0635AF00D411D1 /* TextFieldAutoCompleteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74ECD681D0635AF00D411D1 /* TextFieldAutoCompleteUITests.swift */; };
+		C74ECD771D06366600D411D1 /* TextFieldAutoComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74ECD761D06366600D411D1 /* TextFieldAutoComplete.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C74ECD5A1D0635AF00D411D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C74ECD3D1D0635AE00D411D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C74ECD441D0635AE00D411D1;
+			remoteInfo = TextFieldAutoComplete;
+		};
+		C74ECD651D0635AF00D411D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C74ECD3D1D0635AE00D411D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C74ECD441D0635AE00D411D1;
+			remoteInfo = TextFieldAutoComplete;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C74ECD451D0635AE00D411D1 /* TextFieldAutoComplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldAutoComplete.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74ECD481D0635AF00D411D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C74ECD4A1D0635AF00D411D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C74ECD4D1D0635AF00D411D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C74ECD4F1D0635AF00D411D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C74ECD521D0635AF00D411D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C74ECD541D0635AF00D411D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C74ECD591D0635AF00D411D1 /* TextFieldAutoCompleteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldAutoCompleteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74ECD5D1D0635AF00D411D1 /* TextFieldAutoCompleteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAutoCompleteTests.swift; sourceTree = "<group>"; };
+		C74ECD5F1D0635AF00D411D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C74ECD641D0635AF00D411D1 /* TextFieldAutoCompleteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldAutoCompleteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74ECD681D0635AF00D411D1 /* TextFieldAutoCompleteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAutoCompleteUITests.swift; sourceTree = "<group>"; };
+		C74ECD6A1D0635AF00D411D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C74ECD761D06366600D411D1 /* TextFieldAutoComplete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldAutoComplete.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C74ECD421D0635AE00D411D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74ECD561D0635AF00D411D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74ECD611D0635AF00D411D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C74ECD3C1D0635AE00D411D1 = {
+			isa = PBXGroup;
+			children = (
+				C74ECD471D0635AF00D411D1 /* TextFieldAutoComplete */,
+				C74ECD5C1D0635AF00D411D1 /* TextFieldAutoCompleteTests */,
+				C74ECD671D0635AF00D411D1 /* TextFieldAutoCompleteUITests */,
+				C74ECD461D0635AE00D411D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C74ECD461D0635AE00D411D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C74ECD451D0635AE00D411D1 /* TextFieldAutoComplete.app */,
+				C74ECD591D0635AF00D411D1 /* TextFieldAutoCompleteTests.xctest */,
+				C74ECD641D0635AF00D411D1 /* TextFieldAutoCompleteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C74ECD471D0635AF00D411D1 /* TextFieldAutoComplete */ = {
+			isa = PBXGroup;
+			children = (
+				C74ECD481D0635AF00D411D1 /* AppDelegate.swift */,
+				C74ECD4A1D0635AF00D411D1 /* ViewController.swift */,
+				C74ECD4C1D0635AF00D411D1 /* Main.storyboard */,
+				C74ECD4F1D0635AF00D411D1 /* Assets.xcassets */,
+				C74ECD511D0635AF00D411D1 /* LaunchScreen.storyboard */,
+				C74ECD541D0635AF00D411D1 /* Info.plist */,
+				C74ECD761D06366600D411D1 /* TextFieldAutoComplete.swift */,
+			);
+			path = TextFieldAutoComplete;
+			sourceTree = "<group>";
+		};
+		C74ECD5C1D0635AF00D411D1 /* TextFieldAutoCompleteTests */ = {
+			isa = PBXGroup;
+			children = (
+				C74ECD5D1D0635AF00D411D1 /* TextFieldAutoCompleteTests.swift */,
+				C74ECD5F1D0635AF00D411D1 /* Info.plist */,
+			);
+			path = TextFieldAutoCompleteTests;
+			sourceTree = "<group>";
+		};
+		C74ECD671D0635AF00D411D1 /* TextFieldAutoCompleteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C74ECD681D0635AF00D411D1 /* TextFieldAutoCompleteUITests.swift */,
+				C74ECD6A1D0635AF00D411D1 /* Info.plist */,
+			);
+			path = TextFieldAutoCompleteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C74ECD441D0635AE00D411D1 /* TextFieldAutoComplete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C74ECD6D1D0635AF00D411D1 /* Build configuration list for PBXNativeTarget "TextFieldAutoComplete" */;
+			buildPhases = (
+				C74ECD411D0635AE00D411D1 /* Sources */,
+				C74ECD421D0635AE00D411D1 /* Frameworks */,
+				C74ECD431D0635AE00D411D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldAutoComplete;
+			productName = TextFieldAutoComplete;
+			productReference = C74ECD451D0635AE00D411D1 /* TextFieldAutoComplete.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C74ECD581D0635AF00D411D1 /* TextFieldAutoCompleteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C74ECD701D0635AF00D411D1 /* Build configuration list for PBXNativeTarget "TextFieldAutoCompleteTests" */;
+			buildPhases = (
+				C74ECD551D0635AF00D411D1 /* Sources */,
+				C74ECD561D0635AF00D411D1 /* Frameworks */,
+				C74ECD571D0635AF00D411D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C74ECD5B1D0635AF00D411D1 /* PBXTargetDependency */,
+			);
+			name = TextFieldAutoCompleteTests;
+			productName = TextFieldAutoCompleteTests;
+			productReference = C74ECD591D0635AF00D411D1 /* TextFieldAutoCompleteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C74ECD631D0635AF00D411D1 /* TextFieldAutoCompleteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C74ECD731D0635AF00D411D1 /* Build configuration list for PBXNativeTarget "TextFieldAutoCompleteUITests" */;
+			buildPhases = (
+				C74ECD601D0635AF00D411D1 /* Sources */,
+				C74ECD611D0635AF00D411D1 /* Frameworks */,
+				C74ECD621D0635AF00D411D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C74ECD661D0635AF00D411D1 /* PBXTargetDependency */,
+			);
+			name = TextFieldAutoCompleteUITests;
+			productName = TextFieldAutoCompleteUITests;
+			productReference = C74ECD641D0635AF00D411D1 /* TextFieldAutoCompleteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C74ECD3D1D0635AE00D411D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = eedge;
+				TargetAttributes = {
+					C74ECD441D0635AE00D411D1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6M665SHXJ7;
+					};
+					C74ECD581D0635AF00D411D1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6M665SHXJ7;
+						TestTargetID = C74ECD441D0635AE00D411D1;
+					};
+					C74ECD631D0635AF00D411D1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6M665SHXJ7;
+						TestTargetID = C74ECD441D0635AE00D411D1;
+					};
+				};
+			};
+			buildConfigurationList = C74ECD401D0635AE00D411D1 /* Build configuration list for PBXProject "TextFieldAutoComplete" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C74ECD3C1D0635AE00D411D1;
+			productRefGroup = C74ECD461D0635AE00D411D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C74ECD441D0635AE00D411D1 /* TextFieldAutoComplete */,
+				C74ECD581D0635AF00D411D1 /* TextFieldAutoCompleteTests */,
+				C74ECD631D0635AF00D411D1 /* TextFieldAutoCompleteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C74ECD431D0635AE00D411D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74ECD531D0635AF00D411D1 /* LaunchScreen.storyboard in Resources */,
+				C74ECD501D0635AF00D411D1 /* Assets.xcassets in Resources */,
+				C74ECD4E1D0635AF00D411D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74ECD571D0635AF00D411D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74ECD621D0635AF00D411D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C74ECD411D0635AE00D411D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74ECD4B1D0635AF00D411D1 /* ViewController.swift in Sources */,
+				C74ECD491D0635AF00D411D1 /* AppDelegate.swift in Sources */,
+				C74ECD771D06366600D411D1 /* TextFieldAutoComplete.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74ECD551D0635AF00D411D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74ECD5E1D0635AF00D411D1 /* TextFieldAutoCompleteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74ECD601D0635AF00D411D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74ECD691D0635AF00D411D1 /* TextFieldAutoCompleteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C74ECD5B1D0635AF00D411D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C74ECD441D0635AE00D411D1 /* TextFieldAutoComplete */;
+			targetProxy = C74ECD5A1D0635AF00D411D1 /* PBXContainerItemProxy */;
+		};
+		C74ECD661D0635AF00D411D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C74ECD441D0635AE00D411D1 /* TextFieldAutoComplete */;
+			targetProxy = C74ECD651D0635AF00D411D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C74ECD4C1D0635AF00D411D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C74ECD4D1D0635AF00D411D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C74ECD511D0635AF00D411D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C74ECD521D0635AF00D411D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C74ECD6B1D0635AF00D411D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C74ECD6C1D0635AF00D411D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C74ECD6E1D0635AF00D411D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextFieldAutoComplete/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EEDGE.XYZ.TextFieldAutoComplete;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C74ECD6F1D0635AF00D411D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextFieldAutoComplete/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EEDGE.XYZ.TextFieldAutoComplete;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C74ECD711D0635AF00D411D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TextFieldAutoCompleteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EEDGE.XYZ.TextFieldAutoCompleteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextFieldAutoComplete.app/TextFieldAutoComplete";
+			};
+			name = Debug;
+		};
+		C74ECD721D0635AF00D411D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TextFieldAutoCompleteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EEDGE.XYZ.TextFieldAutoCompleteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextFieldAutoComplete.app/TextFieldAutoComplete";
+			};
+			name = Release;
+		};
+		C74ECD741D0635AF00D411D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TextFieldAutoCompleteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EEDGE.XYZ.TextFieldAutoCompleteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TextFieldAutoComplete;
+			};
+			name = Debug;
+		};
+		C74ECD751D0635AF00D411D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TextFieldAutoCompleteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EEDGE.XYZ.TextFieldAutoCompleteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TextFieldAutoComplete;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C74ECD401D0635AE00D411D1 /* Build configuration list for PBXProject "TextFieldAutoComplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C74ECD6B1D0635AF00D411D1 /* Debug */,
+				C74ECD6C1D0635AF00D411D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C74ECD6D1D0635AF00D411D1 /* Build configuration list for PBXNativeTarget "TextFieldAutoComplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C74ECD6E1D0635AF00D411D1 /* Debug */,
+				C74ECD6F1D0635AF00D411D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C74ECD701D0635AF00D411D1 /* Build configuration list for PBXNativeTarget "TextFieldAutoCompleteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C74ECD711D0635AF00D411D1 /* Debug */,
+				C74ECD721D0635AF00D411D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C74ECD731D0635AF00D411D1 /* Build configuration list for PBXNativeTarget "TextFieldAutoCompleteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C74ECD741D0635AF00D411D1 /* Debug */,
+				C74ECD751D0635AF00D411D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C74ECD3D1D0635AE00D411D1 /* Project object */;
+}
