@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TextFieldAutoComplete/TextFieldAutoComplete.swift"
-            timestampString = "486956664.298268"
+            timestampString = "487058858.736213"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "autoComplete()"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TextFieldAutoComplete/TextFieldAutoComplete.swift"
-            timestampString = "486961742.695286"
+            timestampString = "487058858.736213"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "getColoredText(_:autoCompleteText:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TextFieldAutoComplete/TextFieldAutoComplete.swift"
-            timestampString = "486961742.695286"
+            timestampString = "487058858.736213"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "displayAutoComplete(_:cursorPositionTextRange:)"
             landmarkType = "5">
          </BreakpointContent>

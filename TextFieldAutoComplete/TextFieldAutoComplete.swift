@@ -28,6 +28,8 @@ class TextFieldAutoComplete: UITextField {
     @IBAction func autoComplete (){
         let range: UITextRange? = textRangeFromPosition(beginningOfDocument, toPosition: selectedTextRange!.start)
         
+        var foundAutoCompleteMatch = false
+        
         let inputText = textInRange(range!)
         
         print("\(inputText)")
@@ -36,8 +38,12 @@ class TextFieldAutoComplete: UITextField {
             for string in dataList {
                 if string.lowercaseString.hasPrefix((inputText?.lowercaseString)!) {
                     displayAutoComplete(string, cursorPositionTextRange: selectedTextRange!)
+                    foundAutoCompleteMatch = true
                     break
                 }
+            }
+            if !foundAutoCompleteMatch {
+                text = inputText
             }
         }
     }
