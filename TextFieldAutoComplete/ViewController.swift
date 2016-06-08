@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tf: TextFieldAutoComplete!
 
+    @IBOutlet weak var regularTextField: UITextField!
     var unsortedStrings: Array<String> = ["pickle", "apple", "avocado", "banana", "cherry"]
 
     override func viewDidLoad() {

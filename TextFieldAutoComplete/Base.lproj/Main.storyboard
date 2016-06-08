@@ -19,19 +19,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OFp-MN-8mU" customClass="TextFieldAutoComplete" customModule="TextFieldAutoComplete" customModuleProvider="target">
-                                <rect key="frame" x="77" y="285" width="447" height="30"/>
+                                <rect key="frame" x="44" y="285" width="512" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="regular UITextField for testing purposes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ybz-cl-ivy">
+                                <rect key="frame" x="44" y="323" width="512" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.047118742970000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OFp-MN-8mU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EjW-Ru-RsB"/>
-                            <constraint firstItem="OFp-MN-8mU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="NlT-ra-zjf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="OFp-MN-8mU" secondAttribute="trailing" constant="56" id="V87-IO-dBw"/>
+                            <constraint firstItem="OFp-MN-8mU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="NlT-ra-zjf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OFp-MN-8mU" secondAttribute="trailing" constant="24" id="V87-IO-dBw"/>
+                            <constraint firstItem="ybz-cl-ivy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="ZFH-o1-PSZ"/>
+                            <constraint firstItem="ybz-cl-ivy" firstAttribute="top" secondItem="OFp-MN-8mU" secondAttribute="bottom" constant="8" id="if1-Lk-RkP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ybz-cl-ivy" secondAttribute="trailing" constant="24" id="ypJ-6f-g89"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="regularTextField" destination="ybz-cl-ivy" id="9gJ-13-BC6"/>
                         <outlet property="tf" destination="OFp-MN-8mU" id="YV4-9Y-LBt"/>
                     </connections>
                 </viewController>

@@ -18,6 +18,8 @@ class TextFieldAutoComplete: UITextField {
         dataList = []
         super.init(coder: aDecoder)!
         addTarget(self, action: #selector(TextFieldAutoComplete.autoComplete), forControlEvents: UIControlEvents.EditingChanged)
+        addTarget(self, action: #selector(TextFieldAutoComplete.textToBlack), forControlEvents: UIControlEvents.EditingDidEnd)
+        //addTarget(self, action: #selector(TextFieldAutoComplete.setCorrectColors), forControlEvents: UIControlEvents.TouchUpInside)
     }
     
     func assignDataSource (data: Array<String>) {
@@ -26,22 +28,33 @@ class TextFieldAutoComplete: UITextField {
     }
     
     @IBAction func autoComplete (){
+        //first making sure everything left of cursor is normal text color and everything right is autocomplete color
+        let cursorPositionTextRange = textRangeFromPosition(selectedTextRange!.start, toPosition: selectedTextRange!.start)
+        
         let range: UITextRange? = textRangeFromPosition(beginningOfDocument, toPosition: selectedTextRange!.start)
+        
+        let autoCompleteRange = textRangeFromPosition(selectedTextRange!.start, toPosition: endOfDocument)
+        
+        attributedText = getColoredText(textInRange(range!)!, autoCompleteText: textInRange(autoCompleteRange!)!)
+        
+        selectedTextRange = cursorPositionTextRange
         
         var foundAutoCompleteMatch = false
         
         let inputText = textInRange(range!)
         
-        print("\(inputText)")
-        
+        //check for matches in dataList
         if !dataList.isEmpty {
             for string in dataList {
                 if string.lowercaseString.hasPrefix((inputText?.lowercaseString)!) {
+                    
                     displayAutoComplete(string, cursorPositionTextRange: selectedTextRange!)
                     foundAutoCompleteMatch = true
                     break
                 }
             }
+            
+            //make sure autoComplete text from previous match doesn't get left in field when input changes to a non-matching string
             if !foundAutoCompleteMatch {
                 text = inputText
             }
@@ -49,16 +62,19 @@ class TextFieldAutoComplete: UITextField {
     }
     
     func displayAutoComplete (string: String, cursorPositionTextRange: UITextRange) {
+        
         text = string
         selectedTextRange = cursorPositionTextRange
+        
         let inputTextRange: UITextRange? = textRangeFromPosition(beginningOfDocument, toPosition: selectedTextRange!.start)
+        
         let autoCompleteTextRange: UITextRange? = textRangeFromPosition(selectedTextRange!.start, toPosition: endOfDocument)
+        
         attributedText = getColoredText(textInRange(inputTextRange!)!, autoCompleteText: textInRange(autoCompleteTextRange!)!)
+        
         selectedTextRange = cursorPositionTextRange
         
-        print("autocomplete portion: \(textInRange(autoCompleteTextRange!))")
     }
-    
     
     //getColoredText adapted from https://stackoverflow.com/questions/14231879/is-it-possible-to-change-color-of-single-word-in-uitextview-and-uitextfield
     
@@ -68,8 +84,13 @@ class TextFieldAutoComplete: UITextField {
 
         let range:NSRange = (text.string as NSString).rangeOfString(autoCompleteText)
         
-        text.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: range)
+        text.addAttribute(NSForegroundColorAttributeName, value: UIColor.lightGrayColor(), range: range)
         
         return text
     }
+    
+    func textToBlack () {
+        text = attributedText?.string
+    }
+    
 }
